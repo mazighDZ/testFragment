@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusFragment"
+    android:background="#9C27B0">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Status Fragments"
+        android:textSize="32sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="99dp"
+        android:layout_height="231dp"
+        android:layout_gravity="bottom|end">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="35dp"
+            android:backgroundTint="#838383"
+            android:src="@drawable/baseline_mode_edit_24"
+            app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/green"
+            android:src="@drawable/baseline_photo_camera_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/floatingActionButton"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</FrameLayout>
